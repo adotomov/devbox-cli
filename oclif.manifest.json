@@ -1,0 +1,49 @@
+{
+  "commands": {
+    "doctor": {
+      "aliases": [],
+      "args": {},
+      "description": "Check required local dependencies",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "doctor",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "doctor.js"
+      ]
+    }
+  },
+  "version": "0.0.0"
+}
