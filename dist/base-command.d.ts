@@ -4,7 +4,7 @@ export type Args<T extends typeof Command> = Interfaces.InferredArgs<T['args']>;
 export declare abstract class BaseCommand<T extends typeof Command> extends Command {
     static enableJsonFlag: boolean;
     static baseFlags: {
-        'log-level': Interfaces.OptionFlag<"error" | "warn" | "info" | "debug" | "trace", Interfaces.CustomOptions>;
+        'log-level': Interfaces.OptionFlag<"error" | "warn" | "info" | "debug", Interfaces.CustomOptions>;
     };
     protected flags: Flags<T>;
     protected args: Args<T>;

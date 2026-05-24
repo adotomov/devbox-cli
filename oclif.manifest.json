@@ -43,6 +43,601 @@
         "commands",
         "doctor.js"
       ]
+    },
+    "init": {
+      "aliases": [],
+      "args": {},
+      "description": "Bootstrapping devbox environment",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        },
+        "cluster-name": {
+          "name": "cluster-name",
+          "summary": "Cluster name",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "type": "option"
+        },
+        "registry-port": {
+          "name": "registry-port",
+          "summary": "Local registry port",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "type": "option"
+        },
+        "shared-namespace": {
+          "name": "shared-namespace",
+          "summary": "Shared resource namespace",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "init",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "init.js"
+      ]
+    },
+    "reset": {
+      "aliases": [],
+      "args": {},
+      "description": "Delete the devbox cluster and registry",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        },
+        "yes": {
+          "char": "y",
+          "name": "yes",
+          "summary": "Skip confirmation prompt",
+          "allowNo": false,
+          "type": "boolean"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "reset",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "reset.js"
+      ]
+    },
+    "status": {
+      "aliases": [],
+      "args": {},
+      "description": "Show machine-level devbox status",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "status",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "status.js"
+      ]
+    },
+    "project:init": {
+      "aliases": [],
+      "args": {},
+      "description": "Create a devbox project workspace",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        },
+        "name": {
+          "name": "name",
+          "required": true,
+          "summary": "Project name",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "type": "option"
+        },
+        "type": {
+          "name": "type",
+          "required": true,
+          "summary": "Type of project (monorepo vs standalone)",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "project:init",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "project",
+        "init.js"
+      ]
+    },
+    "config:shared:list": {
+      "aliases": [],
+      "args": {},
+      "description": "List available shared services",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "config:shared:list",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "config",
+        "shared",
+        "list.js"
+      ]
+    },
+    "config:shared:status": {
+      "aliases": [],
+      "args": {},
+      "description": "Show status for shared services",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "config:shared:status",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "config",
+        "shared",
+        "status.js"
+      ]
+    },
+    "config:shared:fakegcs:disable": {
+      "aliases": [],
+      "args": {},
+      "description": "Disable the shared Fake GCS service",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "config:shared:fakegcs:disable",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "config",
+        "shared",
+        "fakegcs",
+        "disable.js"
+      ]
+    },
+    "config:shared:fakegcs:enable": {
+      "aliases": [],
+      "args": {},
+      "description": "Enable the shared Fake GCS service",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "config:shared:fakegcs:enable",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "config",
+        "shared",
+        "fakegcs",
+        "enable.js"
+      ]
+    },
+    "config:shared:postgres:disable": {
+      "aliases": [],
+      "args": {},
+      "description": "Disable the shared Postgres service",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "config:shared:postgres:disable",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "config",
+        "shared",
+        "postgres",
+        "disable.js"
+      ]
+    },
+    "config:shared:postgres:enable": {
+      "aliases": [],
+      "args": {},
+      "description": "Enable the shared Postgres service",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "config:shared:postgres:enable",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "config",
+        "shared",
+        "postgres",
+        "enable.js"
+      ]
+    },
+    "config:shared:redis:disable": {
+      "aliases": [],
+      "args": {},
+      "description": "Disable the shared Redis service",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "config:shared:redis:disable",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "config",
+        "shared",
+        "redis",
+        "disable.js"
+      ]
+    },
+    "config:shared:redis:enable": {
+      "aliases": [],
+      "args": {},
+      "description": "Enable the shared Redis service",
+      "flags": {
+        "json": {
+          "description": "Format output as json.",
+          "helpGroup": "GLOBAL",
+          "name": "json",
+          "allowNo": false,
+          "type": "boolean"
+        },
+        "log-level": {
+          "helpGroup": "GLOBAL",
+          "name": "log-level",
+          "summary": "Log level for command output",
+          "default": "info",
+          "hasDynamicHelp": false,
+          "multiple": false,
+          "options": [
+            "error",
+            "warn",
+            "info",
+            "debug",
+            "trace"
+          ],
+          "type": "option"
+        }
+      },
+      "hasDynamicHelp": false,
+      "hiddenAliases": [],
+      "id": "config:shared:redis:enable",
+      "pluginAlias": "devbox-cli",
+      "pluginName": "devbox-cli",
+      "pluginType": "core",
+      "strict": true,
+      "enableJsonFlag": true,
+      "isESM": true,
+      "relativePath": [
+        "dist",
+        "commands",
+        "config",
+        "shared",
+        "redis",
+        "enable.js"
+      ]
     }
   },
   "version": "0.0.0"
